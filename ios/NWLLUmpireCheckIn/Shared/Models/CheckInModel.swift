@@ -10,4 +10,9 @@ import Foundation
 struct CheckInModel: Codable {
     var fullName: String
     var email: String
+    
+    init(fullName: String? = "", email: String? = ""){
+        self.fullName = fullName!
+        self.email = email!
+    }
 }

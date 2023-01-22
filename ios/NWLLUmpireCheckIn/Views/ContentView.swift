@@ -18,8 +18,8 @@ struct ContentView: View {
             Text("Please check in for your game once you arrive at the field").multilineTextAlignment(.center)
 
             Form {
-                TextField("Full Name", text: $viewModel.fullName)
-                TextField("Email", text: $viewModel.email).keyboardType(.emailAddress)
+                TextField("Full Name", text: $viewModel.checkIn.fullName)
+                TextField("Email", text: $viewModel.checkIn.email).keyboardType(.emailAddress)
                 Button("Submit", action: viewModel.submit)
             }
             Text(viewModel.result)
