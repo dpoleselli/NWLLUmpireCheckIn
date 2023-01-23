@@ -11,6 +11,9 @@ node_modules
 ## User settings
 xcuserdata/
 
+## Configuration (Store API Key in config file so not visible on Repo)
+*.xcconfig
+
 ## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
 *.xcscmblueprint
 *.xccheckout
